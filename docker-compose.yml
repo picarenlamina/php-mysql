@@ -16,7 +16,7 @@ services:
       MYSQL_ROOT_PASSWORD: "super-secret-password"
       MYSQL_DATABASE: "my-wonderful-website"
     volumes:
-      - dbData:/var/lib/mysql
+      - ./dbData:/var/lib/mysql
     networks:
       - net
 networks:
