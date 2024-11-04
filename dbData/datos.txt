@@ -1,1 +1,9 @@
-datos
+USE test;
+CREATE TABLE Persons (
+    codigo INT,
+    nombre varchar(100),
+    apellidos varchar(100)
+);
+
+insert into Persons values ( 1, "fernando", "ruiz" );
+insert into Persons values ( 2, "javier", "perez" );
