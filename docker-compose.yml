@@ -7,7 +7,7 @@ services:
     networks:
       - net
     volumes:
-      - ./app/php:/var/www/html
+      - ./app:/var/www/html
   mysql:
     ports:
       - "3306:3306"
