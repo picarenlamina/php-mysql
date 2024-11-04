@@ -7,14 +7,14 @@ services:
     networks:
       - net
     volumes:
-      - ./app:/var/www/html
+      - ./app/php:/var/www/html
   mysql:
     ports:
       - "3306:3306"
     build: './build/mysql'
     environment:
-      MYSQL_ROOT_PASSWORD: "super-secret-password"
-      MYSQL_DATABASE: "my-wonderful-website"
+      MYSQL_ROOT_PASSWORD: ""
+      MYSQL_DATABASE: "test"
     volumes:
       - ./dbData:/var/lib/mysql
     networks:
